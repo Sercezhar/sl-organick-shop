@@ -1,0 +1,81 @@
+[class*='__container'] {
+  margin: 0 auto;
+  padding: 0 rem($containerPadding);
+  max-width: rem($maxWidthContainer);
+}
+
+.text {
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.17;
+  font-family: $fontFamilyTitle;
+
+  &--h1 {
+    font-size: 70px;
+  }
+  &--h2 {
+    font-size: 50px;
+  }
+  &--h3 {
+    font-size: 40px;
+  }
+  &--h4 {
+    font-size: 35px;
+  }
+  &--h5 {
+    font-size: 30px;
+  }
+  &--h5 {
+    font-size: 25px;
+  }
+}
+
+.pretitle {
+  color: var(--color-secondary);
+  font-size: 36px;
+  font-family: $fontFamilyPretitle;
+
+  &--white {
+    color: #fff;
+  }
+
+  &--small {
+    font-size: 22px;
+  }
+}
+
+.button-common {
+  display: flex;
+  gap: 10px;
+  padding: 29px 39px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.17;
+  background-color: var(--color-primary);
+  border-radius: 16px;
+
+  &--yellow {
+    background-color: #efd372;
+  }
+
+  &--white {
+    background-color: #fff;
+    outline: 1px solid var(--color-primary);
+  }
+}
+
+.locked {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

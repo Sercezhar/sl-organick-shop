@@ -1,0 +1,30 @@
+// adaptive
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContent: 1400;
+$containerPadding: 15;
+$maxWidthContainer: $maxWidthContent + ($containerPadding * 2);
+
+// breakpoints
+$pc: em($maxWidthContainer);
+$tablet: em(991.98);
+$mobileMedium: em(767.98);
+$mobileSmall: em(479.98);
+
+// transitions
+$transitionBase: cubic-bezier(0.4, 0, 0.2, 1);
+
+// fonts
+$fontSizeMain: 18px;
+$lineHeightMain: 1.65;
+$fontFamilyMain: 'Open Sans', sans-serif;
+$fontFamilyTitle: 'Roboto', sans-serif;
+$fontFamilyPretitle: 'Yellowtail', cursive;
+
+:root {
+  // colors
+  --color-primary: #274c5b;
+  --color-secondary: #7eb693;
+  --color-text-main: #525c60;
+  --color-light-gray: #f9f8f8;
+}
