@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  color: var(--color-primary);
+  font-size: 38px;
+  font-weight: 700;
+  font-family: $fontFamilyTitle;
+
+  & svg {
+    margin-right: 8px;
+  }
+}
