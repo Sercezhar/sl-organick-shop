@@ -1,6 +1,132 @@
 .footer {
   margin-top: auto;
-  padding: 20px 0;
-  color: #fff;
-  background-color: #000;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 285px auto 285px;
+    justify-content: center;
+    padding-bottom: 110px;
+
+    @media (max-width: $tablet) {
+      display: flex;
+    }
+
+    @media (max-width: $mobileMedium) {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      padding-bottom: 55px;
+    }
+
+    & div {
+      @media (max-width: $tablet) {
+        width: 50%;
+      }
+
+      @media (max-width: $mobileMedium) {
+        width: fit-content;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+}
+
+.footer-contacts {
+  padding: 0 51px;
+  text-align: right;
+
+  @media (max-width: $mobileMedium) {
+    text-align: center;
+  }
+
+  @media (max-width: $mobileSmall) {
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    @media (max-width: $mobileMedium) {
+      align-items: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__link {
+    width: fit-content;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 42px;
+  height: 336px;
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 80px;
+    height: auto;
+    border: none;
+  }
+
+  @media (max-width: $mobileSmall) {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  &__text {
+    margin-top: 23px;
+    margin-bottom: 49px;
+    max-width: 543px;
+  }
+}
+
+.footer-pages {
+  padding: 0 51px;
+
+  @media (max-width: $mobileMedium) {
+    text-align: center;
+  }
+
+  @media (max-width: $mobileSmall) {
+    padding: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.footer-copyright {
+  border-top: 1px solid #d4d4d4;
+
+  &__container {
+    padding: 16px 0;
+    text-align: center;
+
+    & p {
+      @media (max-width: $mobileMedium) {
+        margin: 0 auto;
+        max-width: 385px;
+      }
+    }
+  }
 }

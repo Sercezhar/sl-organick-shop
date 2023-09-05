@@ -1,5 +1,70 @@
 <footer class="footer">
 	<div class="footer__container">
-		<p>Footer content</p>
+		<div class="footer__content">
+			<div class="footer-contacts">
+				<h5 class="footer__title text text--h5">Contact Us</h5>
+
+				<address>
+					<ul>
+						<li class="footer-contacts__item">
+							<span class="footer-contacts__label">Email</span>
+							<a class="footer-contacts__link link-hover" href="mailto:needhelp@organia.com">needhelp@Organia.com</a>
+						</li>
+						<li class="footer-contacts__item">
+							<span class="footer-contacts__label">Phone</span>
+							<a class="footer-contacts__link link-hover" href="tel:6969 888 333">6969 888 333</a>
+						</li>
+						<li class="footer-contacts__item">
+							<span class="footer-contacts__label">Address</span>
+							<a class="footer-contacts__link link-hover" href="https://goo.gl/maps/Es1vQL1QrhyTqmxW9">88 Brooklyn Ave, USA</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+
+			<div class="footer-socials" data-da=".footer__container, 991.98, 0">
+				{% include "./../components/logo.twig" %}
+
+				<p class="footer-socials__text">
+					Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing
+				</p>
+
+				{% include "./../components/socials.twig" %}
+			</div>
+
+			<div class="footer-pages">
+				<h5 class="footer__title text text--h5">Utility Pages</h5>
+
+				<ul class="footer-pages__list">
+					<li class="footer-pages__item">
+						<a class="link-hover" href="#">Style Guide</a>
+					</li>
+					<li class="footer-pages__item">
+						<a class="link-hover" href="#">404 Not Found</a>
+					</li>
+					<li class="footer-pages__item">
+						<a class="link-hover" href="#">Password Protected</a>
+					</li>
+					<li class="footer-pages__item">
+						<a class="link-hover" href="#">Licences</a>
+					</li>
+					<li class="footer-pages__item">
+						<a class="link-hover" href="#">Changelog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-copyright">
+		<div class="footer-copyright__container">
+			<p>Copyright ©
+				<b>Organick</b>
+				| Designed by
+				<b>VictorFlow</b>
+				Templates - Powered by
+				<b>Webflow</b>
+			</p>
+		</div>
 	</div>
 </footer>
