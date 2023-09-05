@@ -25,7 +25,7 @@
   &--h5 {
     font-size: 30px;
   }
-  &--h5 {
+  &--h6 {
     font-size: 25px;
   }
 }
@@ -73,6 +73,13 @@
   &--white {
     background-color: #fff;
     outline: 1px solid var(--color-primary);
+  }
+}
+
+.link-hover {
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 
