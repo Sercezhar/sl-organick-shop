@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  gap: 15px;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #eff6f1;
+    border-radius: 50%;
+    transition: box-shadow 250ms $transitionBase;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+      & svg {
+        transform: scale(1.5);
+      }
+    }
+
+    & svg {
+      transition: transform 250ms $transitionBase;
+    }
+  }
+}
