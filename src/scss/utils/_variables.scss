@@ -7,6 +7,7 @@ $maxWidthContainer: $maxWidthContent + ($containerPadding * 2);
 
 // breakpoints
 $pc: em($maxWidthContainer);
+$laptop: em(1365.98);
 $tablet: em(991.98);
 $mobileMedium: em(767.98);
 $mobileSmall: em(479.98);
