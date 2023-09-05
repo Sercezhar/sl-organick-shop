@@ -5,12 +5,8 @@
 
 			<h1 class="hero__title text text--h1">Choose the best healthier way of life</h1>
 
-			<button class="button-common button-common--yellow" type="button">
-				Explore Now
-				<svg width="19" height="19">
-					<use href="./images/icons.svg#icon-btn-arrow"></use>
-				</svg>
-			</button>
+			{% include './../components/button.twig' with
+			{'text': 'Explore Now', 'classes': 'button-common button-common--yellow'} %}
 		</div>
 	</div>
 </section>
