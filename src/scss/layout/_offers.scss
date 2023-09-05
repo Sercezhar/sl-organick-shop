@@ -25,9 +25,15 @@
     position: relative;
     display: inline-block;
 
+    &:hover img {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
     & img {
       width: 100%;
       border-radius: 30px;
+      transition: box-shadow 300ms $transitionBase;
 
       @media (max-width: $mobileMedium) {
         border-radius: 20px;
