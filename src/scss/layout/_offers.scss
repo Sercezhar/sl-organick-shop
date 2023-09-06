@@ -3,6 +3,11 @@
     padding-top: 154px;
     padding-bottom: 190px;
 
+    @media (max-width: $laptop) {
+      padding-top: 104px;
+      padding-bottom: 140px;
+    }
+
     @media (max-width: $tablet) {
       padding-top: 77px;
       padding-bottom: 95px;

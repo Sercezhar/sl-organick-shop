@@ -13,7 +13,7 @@
     transition: box-shadow 250ms $transitionBase;
 
     &:hover {
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      box-shadow: $shadowHoverBtn;
 
       & svg {
         transform: scale(1.5);
