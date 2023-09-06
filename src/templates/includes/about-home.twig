@@ -1,0 +1,59 @@
+<section class="about-home">
+  <div class="about-home-container">
+    <img src="./images/Home/about.png" alt="fruits" />
+
+    <div>
+      <p class="pretitle">About Us</p>
+      <h2 class="about-home__title text text--h2">
+        We Believe in Working Accredited Farmers
+      </h2>
+      <p class="about-home__text">
+        Simply dummy text of the printing and typesetting industry. Lorem had
+        ceased to been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley.
+      </p>
+
+      <ul class="advantages">
+        <li class="advantages__item">
+          <span class="advantages__image-wrapper">
+            <img
+              class="advantages__image advantages__image--bowl"
+              src="./images/Home/about-bowl.png"
+              alt="bowl"
+              width="53"
+              height="46"
+            />
+          </span>
+          <div>
+            <h6 class="advantages__title text text--h6">Organic Foods Only</h6>
+            <p class="advantages__text">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__image-wrapper">
+            <img
+              class="advantages__image advantages__image--mailbox"
+              src="./images/Home/about-mailbox.png"
+              alt="mailbox"
+              width="56"
+              height="52"
+            />
+          </span>
+          <div>
+            <h6 class="advantages__title text text--h6">Quality Standards</h6>
+            <p class="advantages__text">
+              Simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      {% include './../components/button.twig' with {'text': 'Shop Now',
+      'classes': 'button-common'} %}
+    </div>
+  </div>
+</section>
