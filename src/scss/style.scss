@@ -5,18 +5,20 @@
 @import './utils/mixins';
 @import './utils/variables';
 
-// components
-@import './components/logo';
-@import './components/socials';
-
 // base
 @import './base/common';
 @import './base/fonts';
 @import './base/reset';
+
+// components
+@import './components/logo';
+@import './components/socials';
+@import './components/products';
 
 // layout
 @import './layout/header';
 @import './layout/hero';
 @import './layout/offers';
 @import './layout/about-home';
+@import './layout/products-home';
 @import './layout/footer';

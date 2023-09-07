@@ -1,0 +1,20 @@
+.products-home {
+  &__container {
+    padding-top: 176px;
+    padding-bottom: 200px;
+
+    & > .pretitle,
+    .text--h2 {
+      text-align: center;
+    }
+
+    & > .button-common {
+      margin-top: 122px;
+      margin-inline: auto;
+    }
+  }
+
+  &__title {
+    margin: 8px 0 40px 0;
+  }
+}
