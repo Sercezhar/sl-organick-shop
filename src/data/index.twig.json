@@ -114,6 +114,26 @@
       "tag": "Vegetable"
     }
   ],
+  "testimonials": [
+    {
+      "image": "./images/Home/customer-1.jpg",
+      "name": "Sara Taylor",
+      "comment": "The staff is friendly and always happy to answer questions. This store is a great example of how shopping for healthy, sustainable food can be both accessible and enjoyable.",
+      "label": "Consumer"
+    },
+    {
+      "image": "./images/Home/customer-2.jpg",
+      "name": "Jonathan Lee",
+      "comment": "I recently discovered Organick. The prices are reasonable for the exceptional quality you get. This store has become my go-to for all things produce!",
+      "label": "Consumer"
+    },
+    {
+      "image": "./images/Home/customer-3.jpg",
+      "name": "Emily Davis",
+      "comment": "I appreciate commitment to sustainability and supporting local farmers. It's always a pleasure to shop here. Keep up the greatwork, Organick!",
+      "label": "Consumer"
+    }
+  ],
   "offers": [
     {
       "image": "./images/products/product-17.jpg",
