@@ -1,10 +1,14 @@
 import { burgerMenu } from './modules/burgerMenu';
+import { counterOnScroll } from './modules/counter';
 import { useDynamicAdapt } from './modules/dynamicAdapt';
 import { navDropdown } from './modules/navDropdown';
+import { swiper } from './modules/swiper-testimonial';
 
 useDynamicAdapt();
 burgerMenu();
 navDropdown();
+counterOnScroll();
+swiper;
 
 const productsList = document.querySelector('.products');
 const loadMoreBtn = document.querySelector('.load-more-btn');
