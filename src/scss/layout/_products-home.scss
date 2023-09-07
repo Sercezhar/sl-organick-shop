@@ -6,6 +6,10 @@
     & > .pretitle,
     .text--h2 {
       text-align: center;
+
+      @media (max-width: $mobileSmall) {
+        font-size: 45px;
+      }
     }
 
     & > .button-common {
