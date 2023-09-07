@@ -1,11 +1,20 @@
 .footer {
   margin-top: auto;
 
+  &__container {
+    padding-top: 140px;
+    padding-bottom: 110px;
+
+    @media (max-width: $mobileMedium) {
+      padding-top: 70px;
+      padding-bottom: 55px;
+    }
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 285px auto 285px;
     justify-content: center;
-    padding-bottom: 110px;
 
     @media (max-width: $tablet) {
       display: flex;
@@ -15,7 +24,6 @@
       flex-direction: column;
       align-items: center;
       gap: 60px;
-      padding-bottom: 55px;
     }
 
     & div {
@@ -119,7 +127,7 @@
   border-top: 1px solid #d4d4d4;
 
   &__container {
-    padding: 16px 0;
+    padding-block: 16px;
     text-align: center;
 
     & p {

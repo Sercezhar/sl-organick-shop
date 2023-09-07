@@ -25,19 +25,15 @@
     minmax(0, calc($maxWidthContainer / 2) + px)
     minmax($containerPadding + px, 1fr);
   align-items: center;
-  padding-top: 186px;
-  padding-bottom: 199px;
+  padding-top: 87px;
+  padding-bottom: 113px;
 
   @media (max-width: $laptop) {
     display: block;
     margin: 0 auto;
-    padding: 136px $containerPadding + px 150px $containerPadding + px;
+    padding-inline: $containerPadding + px;
     width: fit-content;
     max-width: rem($maxWidthContainer);
-  }
-
-  @media (max-width: $tablet) {
-    padding: 100px $containerPadding + px 100px $containerPadding + px;
   }
 
   & > img {
