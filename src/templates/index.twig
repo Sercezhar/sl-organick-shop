@@ -1,8 +1,18 @@
 {% extends "layouts/default.twig" %}
 
+{% block stylesheets %}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+{% endblock %}
+
 {% block content %}
 	{% include './includes/hero.twig' %}
 	{% include './includes/offers.twig' %}
 	{% include './includes/about-home.twig' %}
 	{% include './includes/products-home.twig' %}
+	{% include './includes/testimonial.twig' %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="./js/app.min.js"></script>
 {% endblock %}
