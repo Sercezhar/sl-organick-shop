@@ -1,3 +1,135 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "products": [
+    {
+      "image": "./images/products/product-1.jpg",
+      "title": "Calabrese Broccoli",
+      "price": 20,
+      "discount": 35,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-2.jpg",
+      "title": "Fresh Banana Fruites",
+      "price": 16,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-3.jpg",
+      "title": "White Nuts",
+      "price": 22,
+      "discount": 10,
+      "tag": "Millets"
+    },
+    {
+      "image": "./images/products/product-4.jpg",
+      "title": "Vegan Red Tomato",
+      "price": 14,
+      "discount": 50,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-5.jpg",
+      "title": "Mung Bean",
+      "price": 20,
+      "discount": 30,
+      "tag": "Health"
+    },
+    {
+      "image": "./images/products/product-6.jpg",
+      "title": "Brown Hazelnut",
+      "price": 18,
+      "discount": 20,
+      "tag": "Nuts"
+    },
+    {
+      "image": "./images/products/product-7.jpg",
+      "title": "Eggs",
+      "price": 12,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-8.jpg",
+      "title": "Zelco Suji Elaichi Rusk",
+      "price": 10,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-9.jpg",
+      "title": "Mung Bean",
+      "price": 12,
+      "discount": null,
+      "tag": "Health"
+    },
+    {
+      "image": "./images/products/product-10.jpg",
+      "title": "White Hazelnut",
+      "price": 18,
+      "discount": null,
+      "tag": "Nuts"
+    },
+    {
+      "image": "./images/products/product-11.jpg",
+      "title": "Fresh Corn",
+      "price": 10,
+      "discount": 20,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-12.jpg",
+      "title": "Organic Almonds",
+      "price": 10,
+      "discount": 10,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-13.jpg",
+      "title": "Mung Bean",
+      "price": 10,
+      "discount": null,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-14.jpg",
+      "title": "Zucchini",
+      "price": 10,
+      "discount": null,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-15.jpg",
+      "title": "Onion",
+      "price": 10,
+      "discount": null,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-16.jpg",
+      "title": "Cabbage",
+      "price": 10,
+      "discount": null,
+      "tag": "Vegetable"
+    }
+  ],
+  "offers": [
+    {
+      "image": "./images/products/product-17.jpg",
+      "title": "Spicy"
+    },
+    {
+      "image": "./images/products/product-18.jpg",
+      "title": "Nuts & Seeds"
+    },
+    {
+      "image": "./images/products/product-19.jpg",
+      "title": "Fruits"
+    },
+    {
+      "image": "./images/products/product-20.jpg",
+      "title": "Vegetable"
+    }
+  ]
 }
