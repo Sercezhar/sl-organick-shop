@@ -1,0 +1,44 @@
+<section class="testimonial">
+  <div class="testimonial__container">
+    <p class="pretitle">Testimonial</p>
+    <h2 class="text text--h2">What Our Customer Saying?</h2>
+
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+        {% for testimonial in testimonials %} {% include
+        './../components/testimonial-slide.twig' %} {% endfor %}
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="counters__wrapper">
+      <ul class="counters">
+        <li class="counters__item">
+          <p class="text text--h2">
+            <span class="counters__number" data-number="100">0</span>%
+          </p>
+          <p>Organic</p>
+        </li>
+        <li class="counters__item">
+          <p class="text text--h2">
+            <span class="counters__number" data-number="285">0</span>
+          </p>
+          <p>Active Product</p>
+        </li>
+        <li class="counters__item">
+          <p class="text text--h2">
+            <span class="counters__number" data-number="350">0</span>+
+          </p>
+          <p>Organic Orchads</p>
+        </li>
+        <li class="counters__item">
+          <p class="text text--h2">
+            <span class="counters__number" data-number="25"> 0</span>+
+          </p>
+          <p>Years of Farming</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
