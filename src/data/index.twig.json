@@ -81,36 +81,36 @@
     {
       "image": "./images/products/product-12.jpg",
       "title": "Organic Almonds",
-      "price": 10,
+      "price": 16,
       "discount": 10,
       "tag": "Fresh"
     },
     {
       "image": "./images/products/product-13.jpg",
       "title": "Mung Bean",
-      "price": 10,
+      "price": 12,
       "discount": null,
       "tag": "Vegetable"
     },
     {
       "image": "./images/products/product-14.jpg",
       "title": "Zucchini",
-      "price": 10,
-      "discount": null,
+      "price": 7,
+      "discount": 10,
       "tag": "Vegetable"
     },
     {
       "image": "./images/products/product-15.jpg",
       "title": "Onion",
-      "price": 10,
+      "price": 6,
       "discount": null,
       "tag": "Vegetable"
     },
     {
       "image": "./images/products/product-16.jpg",
       "title": "Cabbage",
-      "price": 10,
-      "discount": null,
+      "price": 8,
+      "discount": 10,
       "tag": "Vegetable"
     }
   ],
