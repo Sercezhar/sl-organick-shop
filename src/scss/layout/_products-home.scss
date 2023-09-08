@@ -6,6 +6,10 @@
     & > .pretitle,
     .text--h2 {
       text-align: center;
+    }
+
+    & > .text--h2 {
+      margin-bottom: 40px;
 
       @media (max-width: $mobileSmall) {
         font-size: 45px;
@@ -16,9 +20,5 @@
       margin-top: 122px;
       margin-inline: auto;
     }
-  }
-
-  &__title {
-    margin: 8px 0 40px 0;
   }
 }

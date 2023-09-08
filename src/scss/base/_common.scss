@@ -31,6 +31,7 @@
 }
 
 .pretitle {
+  margin-bottom: 8px;
   color: var(--color-secondary);
   font-size: 36px;
   font-family: $fontFamilyPretitle;
@@ -41,6 +42,8 @@
   }
 
   &--small {
+    margin-top: 2px;
+    margin-bottom: 0;
     font-size: 22px;
   }
 }
@@ -51,6 +54,7 @@
   justify-content: center;
   gap: 10px;
   padding: 28px 39px;
+  max-height: 79px;
   min-width: 220px;
   color: #fff;
   font-size: 20px;
