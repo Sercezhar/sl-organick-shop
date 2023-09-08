@@ -3,6 +3,10 @@
 
   &__container {
     padding-block: 200px;
+
+    @media (max-width: $tablet) {
+      padding-block: 120px;
+    }
   }
 
   &__header {
@@ -11,9 +15,13 @@
     justify-content: space-between;
     margin-bottom: 50px;
 
+    @media (max-width: $laptop) {
+      justify-content: space-around;
+    }
+
     @media (max-width: $tablet) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
 
     & .text--h2 {
@@ -23,18 +31,8 @@
         margin-bottom: 30px;
       }
 
-      @media (max-width: $mobileMedium) {
-        font-size: 40px;
-      }
-    }
-
-    & .button-common {
-      @media (max-width: $tablet) {
-        margin-left: auto;
-      }
-
       @media (max-width: $mobileSmall) {
-        margin: 0 auto;
+        font-size: 40px;
       }
     }
   }
