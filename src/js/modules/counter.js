@@ -2,7 +2,7 @@ export function counterOnScroll() {
   function counterFunc(counterSelector, attributeSelector) {
     const counters = document.querySelectorAll(counterSelector);
 
-    const interval = 2000;
+    const interval = 1500;
 
     counters.forEach(counter => {
       let startsValue = 0;
