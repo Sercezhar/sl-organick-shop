@@ -1,0 +1,78 @@
+.eco {
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 931px;
+    width: 100%;
+
+    @media (max-width: $mobileMedium) {
+      height: auto;
+    }
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+
+    @media (max-width: $tablet) {
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: $mobileMedium) {
+      position: static;
+      max-height: 360px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      max-height: 260px;
+    }
+  }
+
+  &__content {
+    margin-left: auto;
+    padding: 78px 72px 77px 89px;
+    max-width: 789px;
+    border-radius: 30px;
+    background-color: #fff;
+
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobileMedium) {
+      padding: 30px 0 90px 0;
+    }
+
+    & .text--h2,
+    & li:not(:last-child) {
+      margin-bottom: 35px;
+    }
+
+    & .text--h2 {
+      max-width: 619px;
+
+      @media (max-width: $mobileMedium) {
+        font-size: 40px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        font-size: 33px;
+      }
+    }
+
+    & .text--h6 {
+      margin-bottom: 6px;
+
+      @media (max-width: $mobileSmall) {
+        font-size: 22px;
+      }
+    }
+  }
+}
