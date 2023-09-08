@@ -36,4 +36,12 @@
       }
     }
   }
+
+  &__products {
+    & li:hover {
+      transition-duration: 300ms;
+      box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+        rgba(255, 255, 255, 0.3) 0px 7px 13px -3px;
+    }
+  }
 }
