@@ -10,8 +10,9 @@ navDropdown();
 counterOnScroll();
 swiper;
 
-const productsList = document.querySelector('.products');
+const productsList = document.querySelector('.products-home__products');
 const loadMoreBtn = document.querySelector('.load-more-btn');
+const offersList = document.querySelector('.offers-home__products');
 
 loadMoreBtn.addEventListener('click', loadMoreProducts);
 
@@ -24,17 +25,27 @@ function getProducts() {
     .then(data => {
       const products = data.products;
 
-      insertProducts(products, 0, 8);
+      insertProducts(products, 0, 8, productsList);
     });
 }
 
-function insertProducts(array, from, to) {
+function getOffers() {
+  fetch('./../data/index.twig.json')
+    .then(res => res.json())
+    .then(data => {
+      const products = data.products;
+
+      insertProducts(products, 12, 16, offersList);
+    });
+}
+
+function insertProducts(array, from, to, list) {
   array.slice(from, to).forEach(product => {
     const price = Number(product.price);
     const discount = Number(product.discount);
     const priceWithDiscount = price - (price * discount) / 100;
 
-    productsList.insertAdjacentHTML(
+    list.insertAdjacentHTML(
       'beforeend',
       `<li class="product">
         <span class="product__tag">${product.tag}</span>
@@ -70,7 +81,12 @@ function loadMoreProducts() {
     .then(res => res.json())
     .then(data => {
       const products = data.products;
-      insertProducts(products, itemsToShow, itemsToShow + loadMoreQty);
+      insertProducts(
+        products,
+        itemsToShow,
+        itemsToShow + loadMoreQty,
+        productsList
+      );
 
       itemsToShow += loadMoreQty;
 
@@ -81,3 +97,4 @@ function loadMoreProducts() {
 }
 
 getProducts();
+getOffers();
