@@ -1,4 +1,4 @@
-.offers {
+.promos {
   &__container {
     padding-top: 154px;
     padding-bottom: 190px;
@@ -18,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+
+    & li:first-child .text--h3 {
+      color: #fff;
+    }
 
     @media (max-width: $tablet) {
       flex-direction: column;
@@ -57,17 +61,16 @@
     }
   }
 
-  &__title {
-    margin-top: 5px;
+  & .pretitle {
+    margin-bottom: 5px;
+  }
+
+  & .text--h3 {
     max-width: 278px;
 
     @media (max-width: $mobileSmall) {
       font-size: 25px;
       max-width: 194px;
-    }
-
-    &--white {
-      color: #fff;
     }
   }
 }
