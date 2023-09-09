@@ -1,0 +1,95 @@
+.newsletter {
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 71px;
+    height: 323px;
+    background-image: url('./../images/newsletter.jpg');
+    @include bg-cover();
+    border-radius: 30px;
+
+    @media (max-width: $laptop) {
+      padding-inline: 51px;
+      height: 295px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      flex-direction: column;
+      padding-block: 40px;
+      height: 388px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding: 30px 20px;
+      height: 330px;
+    }
+
+    & .text--h2 {
+      color: #fff;
+      max-width: 357px;
+
+      @media (max-width: $mobileMedium) {
+        max-width: 563px;
+        text-align: center;
+        font-size: 45px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        font-size: 37px;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: 6px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      align-items: center;
+      width: 100%;
+    }
+
+    @media (max-width: $mobileSmall) {
+      align-items: initial;
+    }
+
+    & input {
+      padding-inline: 23px;
+      width: 349px;
+      height: 79px;
+      border-radius: 16px;
+      outline: none;
+
+      @media (max-width: $mobileMedium) {
+        width: 100%;
+      }
+
+      @media (max-width: $mobileSmall) {
+        height: 69px;
+      }
+
+      &::placeholder {
+        font-style: italic;
+        font-family: $fontFamilyTitle;
+        opacity: 0.6;
+      }
+    }
+
+    & svg {
+      display: none;
+    }
+  }
+
+  & .button-common {
+    @media (max-width: $mobileSmall) {
+      padding-block: 23px;
+    }
+  }
+}
