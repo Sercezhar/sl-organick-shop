@@ -1,0 +1,28 @@
+<li class="blogs__item">
+	<div class="blogs__date">
+		<span class="blogs__date--day">{{ blog.date.day }}</span>
+		<span class="blogs__date--month">{{ blog.date.month }}</span>
+	</div>
+
+	<img src="{{ blog.image }}" alt="salad"/>
+
+	<div class="blogs__details">
+		<div class="blogs__author">
+			<svg width="18" height="20">
+				<use href="./images/icons.svg#icon-user"></use>
+			</svg>
+			<span>By
+				{{ blog.author }}</span>
+		</div>
+
+		<div class="blogs__text">
+			<h6 class="text text--h6">{{ blog.title }}</h6>
+			<p>
+				{{ blog.text }}
+			</p>
+		</div>
+
+		{% include './button.twig' with {'text': 'Read More', classes:
+    'button-common button-common--yellow'} %}
+	</div>
+</li>

@@ -1,0 +1,146 @@
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  column-gap: 46px;
+  row-gap: 115px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $mobileSmall) {
+    row-gap: 200px;
+  }
+
+  &__item {
+    position: relative;
+
+    @media (max-width: $tablet) {
+      max-width: 677px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+    }
+  }
+
+  &__date {
+    position: absolute;
+    top: 43px;
+    left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 82px;
+    color: var(--color-primary);
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: $fontFamilyTitle;
+    background-color: #fff;
+    border-radius: 50%;
+
+    @media (max-width: $laptop) {
+      top: 32px;
+      width: 72px;
+      height: 72px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      top: 16px;
+      left: 16px;
+      width: 62px;
+      height: 62px;
+    }
+
+    &--day {
+      font-size: 25px;
+
+      @media (max-width: $laptop) {
+        font-size: 22px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        font-size: 20px;
+      }
+    }
+
+    &--month {
+      font-size: 20px;
+
+      @media (max-width: $laptop) {
+        font-size: 18px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__details {
+    position: absolute;
+    bottom: -68px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 46px 57px 60px 57px;
+    width: 100%;
+    max-width: percent(613, 677);
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 20px 35px rgba(166, 166, 166, 0.25);
+
+    @media (max-width: $laptop) {
+      padding: 30px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      bottom: -148px;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    & .text--h6 {
+      margin-bottom: 2px;
+
+      @media (max-width: $laptop) {
+        @include text-truncate();
+      }
+
+      @media (max-width: $mobileSmall) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__author {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-primary);
+    line-height: normal;
+  }
+
+  &__text {
+    max-width: 465px;
+
+    & > p {
+      @include text-truncate-multi-line(2);
+    }
+  }
+
+  & .button-common {
+    @media (max-width: $mobileSmall) {
+      margin: 0 auto;
+      padding: 20px 30px;
+      min-width: 190px;
+      max-height: 74px;
+    }
+  }
+}
