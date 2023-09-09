@@ -1,0 +1,21 @@
+{
+  "title": "About",
+  "offers": [
+    {
+      "image": "./images/products/product-17.jpg",
+      "title": "Spicy"
+    },
+    {
+      "image": "./images/products/product-18.jpg",
+      "title": "Nuts & Seeds"
+    },
+    {
+      "image": "./images/products/product-19.jpg",
+      "title": "Fruits"
+    },
+    {
+      "image": "./images/products/product-20.jpg",
+      "title": "Vegetable"
+    }
+  ]
+}
