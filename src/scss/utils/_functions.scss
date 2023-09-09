@@ -8,7 +8,7 @@
   @return $result;
 }
 
-@function percent($px, $from) {
-  $result: math.div($px, $from) * 100%;
+@function percent($child, $parent) {
+  $result: math.div($child, $parent) * 100%;
   @return $result;
 }
