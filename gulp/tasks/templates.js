@@ -16,6 +16,11 @@ function templates() {
     )
     .pipe(plugins.plumber(plugins.plumberNotify('HTML Error')))
     .pipe(
+      data(function () {
+        return JSON.parse(fs.readFileSync(`${paths.src.data}global.twig.json`));
+      })
+    )
+    .pipe(
       data(function (file) {
         return JSON.parse(
           fs.readFileSync(paths.src.data + path.basename(file.path) + '.json')
