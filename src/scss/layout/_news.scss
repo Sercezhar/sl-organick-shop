@@ -1,11 +1,15 @@
 .news {
   &__container {
     padding-top: 177px;
-    padding-bottom: 185px;
+    padding-bottom: 251px;
 
     @media (max-width: $laptop) {
       padding-top: 127px;
-      padding-bottom: 135px;
+      padding-bottom: 201px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-bottom: 281px;
     }
   }
 
