@@ -1,4 +1,12 @@
 .newsletter {
+  &__container {
+    padding-top: 140px;
+
+    @media (max-width: $mobileSmall) {
+      padding-top: 120px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     gap: 30px;

@@ -12,7 +12,7 @@
 
   &:hover &__details {
     background-color: #fff;
-    box-shadow: 0px 29px 44px rgba(149, 149, 149, 0.25);
+    box-shadow: $shadowHoverExpert;
   }
 
   & img {
@@ -28,7 +28,7 @@
     background-color: var(--color-light-gray);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    transition: 250ms $transitionBase;
+    transition: 300ms $transitionBase;
     transition-property: background-color, box-shadow;
 
     @media (max-width: $mobileSmall) {

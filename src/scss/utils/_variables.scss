@@ -17,6 +17,9 @@ $transitionBase: cubic-bezier(0.4, 0, 0.2, 1);
 
 //shadows
 $shadowHoverBtn: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+$shadowHoverExpert: 0px 29px 44px rgba(149, 149, 149, 0.25);
+$shadowHoverOffer: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+  rgba(255, 255, 255, 0.3) 0px 7px 13px -3px;
 
 // fonts
 $fontSizeMain: 18px;
