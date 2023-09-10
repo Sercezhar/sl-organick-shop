@@ -1,0 +1,53 @@
+<section class="about-about">
+  <div class="about-about-container">
+    <img src="./images/About/about.png" alt="vagetables" />
+
+    <div class="about-about__content">
+      <p class="pretitle">About Us</p>
+      <h2 class="text text--h2">We do Creative Things for Success</h2>
+      <div class="about-about__text">
+        <p>
+          Simply dummy text of the printing and typesetting industry. Lorem had
+          ceased to been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley.
+        </p>
+        <br />
+        <p>
+          Simply dummy text of the printing and typesetting industry. Lorem had
+          ceased to been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley.
+        </p>
+      </div>
+
+      <ul class="about-about__list">
+        <li class="about-about__item">
+          <img
+            class="about-about__image"
+            src="./images/About/about_icon-1.png"
+            alt="tractor"
+            width="51"
+            height="48"
+          />
+          <h6 class="about-about__title text text--h6">
+            Modern Agriculture Equipment
+          </h6>
+        </li>
+        <li class="about-about__item">
+          <img
+            class="about-about__image"
+            src="./images/About/about_icon-2.png"
+            alt="factory"
+            width="56"
+            height="56"
+          />
+          <h6 class="about-about__title text text--h6">
+            No growth hormones are used
+          </h6>
+        </li>
+      </ul>
+
+      {% include './../components/button.twig' with {'text': 'Explore More',
+      'classes': 'button-common'} %}
+    </div>
+  </div>
+</section>

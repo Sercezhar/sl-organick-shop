@@ -1,0 +1,81 @@
+.about-about {
+  &__content {
+    grid-column: 4 / 6;
+    max-width: 675px;
+  }
+
+  & .text--h2 {
+    margin-bottom: 14px;
+    max-width: 503px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 58px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 15px;
+    }
+
+    & .text--h6 {
+      max-width: 226px;
+    }
+  }
+}
+
+.about-about-container {
+  display: grid;
+  grid-template-columns:
+    minmax($containerPadding + px, 1fr)
+    minmax(0, calc($maxWidthContainer / 2) + px)
+    40px
+    minmax(0, calc($maxWidthContainer / 2 - 40) + px)
+    minmax($containerPadding + px, 1fr);
+  align-items: center;
+  padding-top: 163px;
+  padding-bottom: 70px;
+
+  @media (max-width: $laptop) {
+    display: block;
+    margin: 0 auto;
+    padding-inline: $containerPadding + px;
+    width: fit-content;
+    max-width: rem($maxWidthContainer);
+  }
+
+  @media (max-width: $mobileMedium) {
+    padding-top: 100px;
+  }
+
+  & > img {
+    grid-column: 1 / 3;
+    margin-left: auto;
+    max-width: 100%;
+
+    @media (max-width: $laptop) {
+      display: none;
+    }
+  }
+
+  & button {
+    @media (max-width: $mobileSmall) {
+      margin: 0 auto;
+    }
+  }
+}
