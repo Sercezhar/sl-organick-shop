@@ -1,6 +1,9 @@
 {% extends "layouts/default.twig" %}
 
-{% block content %}{% endblock %}
+{% block content %}
+	{% include './components/page-banner.twig' with {'page_heading': 'About Us', 'image': './images/About/banner.jpg'} %}
+	{% include './includes/about-about.twig' %}
+{% endblock %}
 
 {% block scripts %}
 	<script src="./js/about.min.js"></script>
