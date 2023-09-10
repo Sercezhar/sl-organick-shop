@@ -1,0 +1,152 @@
+.choose-us {
+  background-color: var(--color-light-gray);
+
+  &__container {
+    padding-block: 190px;
+
+    @media (max-width: $laptop) {
+      padding-block: 160px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      padding-block: 140px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-block: 120px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    margin-bottom: 91px;
+
+    @media (max-width: $laptop) {
+      margin-bottom: 51px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    max-width: 671px;
+  }
+
+  & .text--h2 {
+    margin-bottom: 25px;
+
+    @media (max-width: $mobileSmall) {
+      font-size: 38px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 36px;
+  }
+
+  & img {
+    width: 100%;
+    max-width: 678px;
+    max-height: 580px;
+    object-fit: cover;
+    border-radius: 30px;
+
+    @media (max-width: $laptop) {
+      max-height: 296px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      max-height: 206px;
+      border-radius: 15px;
+    }
+  }
+}
+
+.about-benefits {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 29px 27px;
+    width: 100%;
+    max-width: 339px;
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $fontFamilyTitle;
+    line-height: normal;
+    background-color: #ececec;
+    border-radius: 50px;
+
+    @media (max-width: $mobileSmall) {
+      padding-block: 20px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      width: 19px;
+      height: 19px;
+      background-color: transparent;
+      border: 4px solid var(--color-secondary);
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    margin-left: 60px;
+    max-width: 444px;
+  }
+}
+
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @media (max-width: $laptop) {
+    margin: 0 auto;
+    max-width: 544px;
+  }
+
+  &__item {
+    padding: 50px 25px 45px 25px;
+    max-width: 257px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+
+    @media (max-width: $mobileMedium) {
+      padding: 33px 22px;
+    }
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    width: 95px;
+    height: 95px;
+    border-radius: 18px;
+    background-color: var(--color-light-gray);
+  }
+
+  & img {
+    width: auto;
+  }
+
+  & .text--h6 {
+    margin-bottom: 12px;
+  }
+}

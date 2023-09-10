@@ -1,0 +1,47 @@
+<section class="choose-us">
+  <div class="choose-us__container">
+    <div class="choose-us__content">
+      <div class="choose-us__column">
+        <p class="pretitle">Why Choose us?</p>
+        <h2 class="text text--h2">
+          We do not buy from the open market & traders
+        </h2>
+        <p class="choose-us__text">
+          Simply dummy text of the printing and typesetting industry. Lorem had
+          ceased to been the industry's standard the 1500s, when an unknown
+        </p>
+
+        <ul class="about-benefits">
+          <li class="about-benefits__item">
+            <h6 class="about-benefits__title">100% Natural Product</h6>
+            <p class="about-benefits__text">
+              Simply dummy text of the printing and typesetting industry Lorem
+              Ipsum
+            </p>
+          </li>
+          <li class="about-benefits__item">
+            <h6 class="about-benefits__title">Increases resistance</h6>
+            <p class="about-benefits__text">
+              Filling, and temptingly healthy, our Biona Organic Granola with
+              Wild Berries is just the thing
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <img src="./images/About/choose-us.jpg" alt="chopped vegetables" />
+    </div>
+
+    <ul class="about-features">
+      {% for feature in features %}
+      <li class="about-features__item">
+        <div class="about-features__image-wrapper">
+          <img src="{{ feature.image }}" alt="{{ feature.alt }}" />
+        </div>
+        <h6 class="text text--h6">{{ feature.title }}</h6>
+        <p>{{ feature.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
