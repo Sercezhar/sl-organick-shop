@@ -17,5 +17,31 @@
       "image": "./images/products/product-20.jpg",
       "title": "Vegetable"
     }
+  ],
+  "features": [
+    {
+      "image": "./images/About/choose-us_icon-1.png",
+      "alt": "shopping cart",
+      "title": "Return Policy",
+      "text": "Simply dummy text of the printintypesetting industry."
+    },
+    {
+      "image": "./images/About/choose-us_icon-2.png",
+      "alt": "leaves",
+      "title": "100% Fresh",
+      "text": "Simply dummy text of the printintypesetting industry."
+    },
+    {
+      "image": "./images/About/choose-us_icon-3.png",
+      "alt": "a clock with a telephone receiver",
+      "title": "Support 24/7",
+      "text": "Simply dummy text of the printintypesetting industry."
+    },
+    {
+      "image": "./images/About/choose-us_icon-4.png",
+      "alt": "credit card behind the shield",
+      "title": "Secured Payment",
+      "text": "Simply dummy text of the printintypesetting industry."
+    }
   ]
 }
