@@ -17,6 +17,7 @@
 }
 
 .about-home-container {
+  position: relative;
   display: grid;
   grid-template-columns:
     minmax($containerPadding + px, 1fr)
@@ -42,6 +43,13 @@
     max-width: 100%;
 
     @media (max-width: $laptop) {
+      position: absolute;
+      bottom: 20px;
+      right: -70px;
+      width: 320px;
+    }
+
+    @media (max-width: $tablet) {
       display: none;
     }
   }

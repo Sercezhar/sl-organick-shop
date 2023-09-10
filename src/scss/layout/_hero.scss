@@ -4,8 +4,17 @@
   background-image: url('./../images/Home/hero.jpg');
   @include bg-cover();
 
+  @media (max-width: $tablet) {
+    height: 808px;
+    background-position: left 30% top 0;
+  }
+
   @media (max-width: $mobileMedium) {
-    height: 598px;
+    height: 608px;
+  }
+
+  @media (max-width: $mobileMedium) {
+    height: 508px;
   }
 
   &__container {
@@ -21,6 +30,11 @@
     @media (max-width: $mobileMedium) {
       max-width: 364px;
       font-size: 50px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      max-width: 335px;
+      font-size: 46px;
     }
   }
 }
