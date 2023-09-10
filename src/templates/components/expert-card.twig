@@ -1,0 +1,38 @@
+<li class="expert">
+  <img src="{{ expert.photo }}" alt="{{ expert.alt }}" />
+
+  <div class="expert__details">
+    <div>
+      <h6 class="text text--h6">{{ expert.name }}</h6>
+      <p class="pretitle pretitle--small">{{ expert.position }}</p>
+    </div>
+
+    <ul class="expert-socials">
+      {% if expert.socials.instagram %}
+      <li>
+        <a class="expert-socials__link" href="{{ expert.socials.instagram }}">
+          <svg width="22" height="22">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      {% endif %} {% if expert.socials.facebook %}
+      <li>
+        <a class="expert-socials__link" href="{{ expert.socials.facebook }}">
+          <svg width="22" height="21">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      {% endif %} {% if expert.socials.twitter %}
+      <li>
+        <a class="expert-socials__link" href="{{ expert.socials.twitter }}">
+          <svg width="24" height="19">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</li>
