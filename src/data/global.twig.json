@@ -180,5 +180,73 @@
       "title": "Don’t Use Plastic Product! it’s Kill Nature",
       "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
     }
+  ],
+  "experts": [
+    {
+      "photo": "./images/experts/expert-1.jpg",
+      "alt": "man",
+      "name": "Giovani Bacardo",
+      "position": "Farmer",
+      "socials": {
+        "instagram": null,
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-2.jpg",
+      "alt": "woman",
+      "name": "Marianne Loreno",
+      "position": "Designer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-3.jpg",
+      "alt": "woman",
+      "name": "Riga Pelore",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-4.jpg",
+      "alt": "woman",
+      "name": "Keira Knightley",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": null
+      }
+    },
+    {
+      "photo": "./images/experts/expert-5.jpg",
+      "alt": "man",
+      "name": "Scott Lawrence",
+      "position": "Designer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-6.jpg",
+      "alt": "woman",
+      "name": "Karen Allen",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": null
+      }
+    }
   ]
 }
