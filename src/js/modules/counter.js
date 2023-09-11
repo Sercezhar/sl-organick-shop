@@ -8,7 +8,7 @@ export function counterOnScroll() {
       let startsValue = 0;
       const endValue = parseInt(counter.getAttribute(attributeSelector));
       const duration = Math.floor(interval / endValue);
-      console.log(endValue, duration);
+
       const counterHandler = setInterval(() => {
         startsValue += 1;
         counter.textContent = startsValue;
