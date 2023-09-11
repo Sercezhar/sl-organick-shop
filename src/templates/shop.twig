@@ -1,0 +1,11 @@
+{% extends "layouts/default.twig" %}
+
+{% block content %}
+	{% include './components/page-banner.twig' with {'page_heading': 'Shop', 'image': './images/shop-banner.jpg'} %}
+	{% include './includes/products-shop.twig' %}
+	{% include './components/newsletter.twig' %}
+{% endblock %}
+
+{% block scripts %}
+	<script src="./js/shop.min.js"></script>
+{% endblock %}

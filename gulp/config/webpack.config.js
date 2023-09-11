@@ -5,6 +5,7 @@ const config = {
     app: './src/js/app.js',
     index: './src/js/index.js',
     about: './src/js/about.js',
+    shop: './src/js/shop.js',
   },
   output: {
     filename: '[name].min.js',
