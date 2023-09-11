@@ -1,0 +1,31 @@
+{% extends "layouts/default.twig" %}
+
+{% block content %}
+	{% include
+  './components/page-banner.twig' with {'page_heading': 'Projects', 'image':
+  './images/Projects/banner.jpg', 'classes': 'projects-banner'} %}
+	<section class="projects">
+		<div class="projects__container">
+			<ul class="projects__list">
+				{% for project in projects %}
+					<li>
+						<a class="projects-link" href="#">
+							<img src="{{ project.image }}" alt="{{ project.title }}"/>
+
+							<div class="projects-link__overlay">
+								<span class="projects-link__icon-wrapper">
+									<svg width="8" height="14">
+										<use href="./images/icons.svg#icon-chevron-right"></use>
+									</svg>
+								</span>
+							</div>
+						</a>
+						<h6 class="text text--h6">{{ project.title }}</h6>
+						<p class="pretitle pretitle--small">{{ project.tag }}</p>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+	{% include './components/newsletter.twig' %}
+{% endblock %}
