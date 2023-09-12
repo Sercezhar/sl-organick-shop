@@ -1,0 +1,33 @@
+.team-banner {
+  & .text--h1 {
+    @media (max-width: $mobileMedium) {
+      max-width: 220px;
+      text-align: center;
+    }
+  }
+}
+
+.team {
+  &__container {
+    padding-top: 150px;
+
+    @media (max-width: $mobileMedium) {
+      padding-top: 125px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-top: 100px;
+    }
+  }
+
+  &__text-container {
+    margin: 0 auto;
+    margin-bottom: 42px;
+    max-width: 852px;
+    text-align: center;
+
+    & .text--h2 {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{% extends "layouts/default.twig" %}
+
+{% block content %}
+	{% include
+  './components/page-banner.twig' with {'page_heading': 'Our Team', 'image':
+  './images/team-banner.jpg', 'classes': 'team-banner'} %}
+	<section class="team">
+		<div class="team__container">
+			<div class="team__text-container">
+				<p class="pretitle">Team</p>
+				<h2 class="text text--h2">Our Organic Experts</h2>
+				<p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+			</div>
+
+			<ul class="experts">
+				{% for expert in experts %}
+					{% include './components/expert-card.twig' %}
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+	{% include './components/newsletter.twig' %}
+{% endblock %}
