@@ -1,0 +1,35 @@
+{
+  "title": "Services",
+  "services": [
+    {
+      "image": "./images/Services/grow_icon-1.png",
+      "title": "Dairy Products",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    },
+    {
+      "image": "./images/Services/grow_icon-2.png",
+      "title": "Store Services",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    },
+    {
+      "image": "./images/Services/grow_icon-3.png",
+      "title": "Delivery Services",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    },
+    {
+      "image": "./images/Services/grow_icon-4.png",
+      "title": "Agricultural Services",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    },
+    {
+      "image": "./images/Services/grow_icon-5.png",
+      "title": "Organic Products",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    },
+    {
+      "image": "./images/Services/grow_icon-6.png",
+      "title": "Fresh Vegetables",
+      "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis"
+    }
+  ]
+}

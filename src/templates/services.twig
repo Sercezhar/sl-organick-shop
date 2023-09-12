@@ -1,0 +1,10 @@
+{% extends "layouts/default.twig" %}
+
+{% block content %}
+	{% include './components/page-banner.twig' with
+    {'page_heading': 'Services', 'image': './images/Services/banner.jpg'}
+  %}
+	{% include './includes/grow.twig' %}
+{% endblock %}
+
+{% block scripts %}{% endblock %}
