@@ -1,5 +1,4 @@
 .page-banner {
-  height: 450px;
   @include adaptiveValue('height', 450, 250);
   @include bg-cover();
 
