@@ -1,0 +1,99 @@
+.services-video {
+  height: 1073px;
+  background-image: url('./../images/Services/video-thumb.jpg');
+  @include bg-cover();
+
+  @media (max-width: $mobileMedium) {
+    height: 873px;
+  }
+
+  &__container {
+    padding-top: 180px;
+    text-align: center;
+
+    @media (max-width: $mobileMedium) {
+      padding-top: 110px;
+    }
+  }
+
+  & .text--h2 {
+    margin-bottom: 24px;
+
+    @media (max-width: $mobileMedium) {
+      font-size: 46px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 671px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 107px;
+    height: 107px;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    transition: box-shadow 300ms $transitionBase;
+
+    &:hover {
+      box-shadow: -4px 10px 12px #dad1b5;
+
+      & svg {
+        transform: scale(1.5);
+      }
+    }
+
+    & svg {
+      transition: transform 300ms $transitionBase;
+    }
+  }
+}
+
+// modal
+.video-backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 500ms opacity $transitionBase;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 5;
+
+  &--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.video-modal {
+  display: flex;
+  width: 1280px;
+  height: 720px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+  @media (max-width: $laptop) {
+    width: 854px;
+    height: 480px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 640px;
+    height: 360px;
+  }
+
+  @media (max-width: $mobileMedium) {
+    width: 426px;
+    height: 240px;
+  }
+}
