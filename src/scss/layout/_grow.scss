@@ -1,0 +1,129 @@
+.grow {
+  position: relative;
+  z-index: 1;
+  background-color: var(--color-light-gray);
+
+  &__container {
+    padding-block: 202px;
+
+    @media (max-width: $laptop) {
+      padding-block: 172px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      padding-block: 142px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-block: 112px;
+    }
+  }
+
+  & .pretitle,
+  & .text--h2 {
+    text-align: center;
+  }
+
+  & .text--h2 {
+    margin: 0 auto;
+    margin-bottom: 108px;
+    max-width: 482px;
+
+    @media (max-width: $laptop) {
+      margin-bottom: 78px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      font-size: 44px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns:
+      minmax(0, 28.36%)
+      minmax(0, 743px)
+      minmax(0, 28.36%);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 138px;
+
+    @media (max-width: $laptop) {
+      margin-bottom: 108px;
+    }
+
+    @media (max-width: $tablet) {
+      display: flex;
+      column-gap: 90px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    position: relative;
+
+    &:nth-last-of-type(2) {
+      margin-inline: -68px;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &__main-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 990px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+
+  & .button-common {
+    margin: 0 auto;
+  }
+}
+
+.services-item {
+  &:not(:last-child) {
+    margin-bottom: 39px;
+  }
+
+  &:nth-child(odd) {
+    @media (max-width: $mobileMedium) {
+      text-align: right;
+    }
+  }
+
+  &--left {
+    text-align: right;
+
+    &:nth-child(odd) {
+      @media (max-width: $mobileMedium) {
+        text-align: left;
+      }
+    }
+  }
+
+  & img,
+  & .text--h6 {
+    margin-bottom: 5px;
+  }
+
+  & img {
+    width: auto;
+    height: 58px;
+  }
+
+  & p {
+    @media (max-width: $mobileMedium) {
+      max-width: 490px;
+    }
+  }
+}

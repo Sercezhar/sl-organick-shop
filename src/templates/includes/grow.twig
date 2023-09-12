@@ -1,0 +1,47 @@
+<section class="grow">
+  <div class="grow__container">
+    <p class="pretitle">What we Grow</p>
+    <h2 class="text text--h2">Better Agriculture for Better Future</h2>
+
+    <div class="grow__content">
+      <div class="grow__column">
+        <ul class="services">
+          {% for service in services|slice(0, 3) %}
+          <li class="services-item services-item--left">
+            <img src="{{ service.image }}" alt="{{ service.title }}" />
+            <h6 class="text text--h6">{{ service.title }}</h6>
+            <p>
+              {{ service.text }}
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="grow__column">
+        <img
+          class="grow__main-image"
+          src="./images/Services/nuts.jpg"
+          alt="pistachios"
+        />
+      </div>
+
+      <div class="grow__column">
+        <ul class="services">
+          {% for service in services|slice(3, 6) %}
+          <li class="services-item">
+            <img src="{{ service.image }}" alt="{{ service.title }}" />
+            <h6 class="text text--h6">{{ service.title }}</h6>
+            <p>
+              {{ service.text }}
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    {% include './../components/Button.twig' with {'text': 'Explore More',
+    'classes': 'button-common button-common--white'} %}
+  </div>
+</section>
