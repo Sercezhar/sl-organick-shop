@@ -1,0 +1,87 @@
+.contact-form {
+  &__container {
+    padding-top: 80px;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 1184px;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 46px;
+
+    @media (max-width: $mobileMedium) {
+      display: block;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 569px;
+
+    @media (max-width: $mobileMedium) {
+      margin-bottom: 26px;
+      max-width: 100%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 26px;
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $fontFamilyTitle;
+    line-height: normal;
+  }
+
+  &__input,
+  &__textarea {
+    border: 1px solid var(--color-secondary);
+    border-radius: 16px;
+    outline: none;
+    transition: box-shadow 300ms $transitionBase;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    box-shadow: rgba(126, 182, 147, 0.3) 0px 0px 0px 3px;
+  }
+
+  &__input::placeholder,
+  &__textarea::placeholder {
+    font-style: italic;
+    opacity: 0.6;
+  }
+
+  &__input {
+    padding-inline: 23px;
+    width: inherit;
+    height: 80px;
+  }
+
+  &__textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  &__textarea {
+    padding: 28px 23px;
+    width: 100%;
+    resize: none;
+  }
+
+  &__submit {
+    @extend .button-common;
+
+    @media (max-width: $mobileSmall) {
+      margin: 0 auto;
+    }
+  }
+}

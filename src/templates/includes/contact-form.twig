@@ -1,0 +1,64 @@
+<section class="contact-form">
+  <div class="contact-form__container">
+    <form class="contact-form__form">
+      <div class="contact-form__row">
+        <div class="contact-form__input-wrapper">
+          <label class="contact-form__label" for="fullname">Full Name*</label>
+          <input
+            class="contact-form__input"
+            type="text"
+            id="fullname"
+            placeholder="Your email address"
+            required
+          />
+        </div>
+
+        <div class="contact-form__input-wrapper">
+          <label class="contact-form__label" for="email">Your Email*</label>
+          <input
+            class="contact-form__input"
+            type="email"
+            id="email"
+            placeholder="example@yourmail.com"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="contact-form__row">
+        <div class="contact-form__input-wrapper">
+          <label class="contact-form__label" for="company">Company</label>
+          <input
+            class="contact-form__input"
+            type="text"
+            id="company"
+            placeholder="Company name"
+          />
+        </div>
+
+        <div class="contact-form__input-wrapper">
+          <label class="contact-form__label" for="subject">Subject</label>
+          <input
+            class="contact-form__input"
+            type="text"
+            id="subject"
+            placeholder="Subject of the question"
+          />
+        </div>
+      </div>
+
+      <div class="contact-form__textarea-wrapper">
+        <label class="contact-form__label" for="message">Message*</label>
+        <textarea
+          class="contact-form__textarea"
+          id="message"
+          rows="8"
+          placeholder="I would like to ask..."
+          required
+        ></textarea>
+      </div>
+
+      <button class="contact-form__submit" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
