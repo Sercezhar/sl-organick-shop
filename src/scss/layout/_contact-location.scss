@@ -1,0 +1,76 @@
+.contact-location {
+  &__container {
+    padding-top: 98px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 758px;
+    background-image: url('./../images/Contact/leaf.jpg');
+    @include bg-cover();
+    border-radius: 30px;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobileMedium) {
+      padding-inline: 28px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding-inline: 0;
+      height: 558px;
+      background-image: none;
+    }
+  }
+}
+
+.location-content {
+  margin-right: 108px;
+  padding: 46px 53px;
+  max-width: 514px;
+  background-color: #fff;
+  border-radius: 30px;
+
+  @media (max-width: $tablet) {
+    margin-right: 0;
+  }
+
+  @media (max-width: $mobileSmall) {
+    padding: 32px 26px;
+    background-color: var(--color-light-gray);
+  }
+
+  &__text-container {
+    margin-bottom: 19px;
+
+    & .pretitle {
+      margin-bottom: -4px;
+    }
+
+    & .text--h2 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.location-list {
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+
+    & img {
+      margin-right: 6px;
+    }
+  }
+
+  &__city {
+    font-weight: 700;
+  }
+}
