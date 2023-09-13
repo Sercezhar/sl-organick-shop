@@ -1,0 +1,252 @@
+{
+  "products": [
+    {
+      "image": "./images/products/product-1.jpg",
+      "title": "Calabrese Broccoli",
+      "price": 20,
+      "discount": 35,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-2.jpg",
+      "title": "Fresh Banana Fruites",
+      "price": 16,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-3.jpg",
+      "title": "White Nuts",
+      "price": 22,
+      "discount": 10,
+      "tag": "Millets"
+    },
+    {
+      "image": "./images/products/product-4.jpg",
+      "title": "Vegan Red Tomato",
+      "price": 14,
+      "discount": 50,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-5.jpg",
+      "title": "Mung Bean",
+      "price": 20,
+      "discount": 30,
+      "tag": "Health"
+    },
+    {
+      "image": "./images/products/product-6.jpg",
+      "title": "Brown Hazelnut",
+      "price": 18,
+      "discount": 20,
+      "tag": "Nuts"
+    },
+    {
+      "image": "./images/products/product-7.jpg",
+      "title": "Eggs",
+      "price": 12,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-8.jpg",
+      "title": "Zelco Suji Elaichi Rusk",
+      "price": 10,
+      "discount": null,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-9.jpg",
+      "title": "Mung Bean",
+      "price": 12,
+      "discount": null,
+      "tag": "Health"
+    },
+    {
+      "image": "./images/products/product-10.jpg",
+      "title": "White Hazelnut",
+      "price": 18,
+      "discount": null,
+      "tag": "Nuts"
+    },
+    {
+      "image": "./images/products/product-11.jpg",
+      "title": "Fresh Corn",
+      "price": 10,
+      "discount": 20,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-12.jpg",
+      "title": "Organic Almonds",
+      "price": 16,
+      "discount": 10,
+      "tag": "Fresh"
+    },
+    {
+      "image": "./images/products/product-13.jpg",
+      "title": "Mung Bean",
+      "price": 12,
+      "discount": null,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-14.jpg",
+      "title": "Zucchini",
+      "price": 7,
+      "discount": 10,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-15.jpg",
+      "title": "Onion",
+      "price": 6,
+      "discount": null,
+      "tag": "Vegetable"
+    },
+    {
+      "image": "./images/products/product-16.jpg",
+      "title": "Cabbage",
+      "price": 8,
+      "discount": 10,
+      "tag": "Vegetable"
+    }
+  ],
+  "blogs": [
+    {
+      "image": "./images/blog/blog-1.jpg",
+      "alt": "salad",
+      "date": {
+        "day": "25",
+        "month": "Nov"
+      },
+      "author": "Lucas Anderson",
+      "title": "The Benefits of Vitamin D & How to Get It",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    },
+    {
+      "image": "./images/blog/blog-2.jpg",
+      "alt": "tomato",
+      "date": {
+        "day": "24",
+        "month": "Nov"
+      },
+      "author": "Rachi Card",
+      "title": "Our Favorite Summertime Tomato",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    },
+    {
+      "image": "./images/blog/blog-3.jpg",
+      "alt": "tomato",
+      "date": {
+        "day": "22",
+        "month": "Nov"
+      },
+      "author": "Lucas Anderson",
+      "title": "Benefits of Vitamin C & How to Get It",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    },
+    {
+      "image": "./images/blog/blog-4.jpg",
+      "alt": "tomato",
+      "date": {
+        "day": "22",
+        "month": "Nov"
+      },
+      "author": "Rachi Card",
+      "title": "Research More Organic Foods",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    },
+    {
+      "image": "./images/blog/blog-5.jpg",
+      "alt": "tomato",
+      "date": {
+        "day": "21",
+        "month": "Nov"
+      },
+      "author": "Sophia Martinez",
+      "title": "Everyday Fresh Fruites",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    },
+    {
+      "image": "./images/blog/blog-6.jpg",
+      "alt": "tomato",
+      "date": {
+        "day": "18",
+        "month": "Nov"
+      },
+      "author": "Emma Wilson",
+      "title": "Don’t Use Plastic Product! it’s Kill Nature",
+      "text": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum"
+    }
+  ],
+  "experts": [
+    {
+      "photo": "./images/experts/expert-1.jpg",
+      "alt": "man",
+      "name": "Giovani Bacardo",
+      "position": "Farmer",
+      "socials": {
+        "instagram": null,
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-2.jpg",
+      "alt": "woman",
+      "name": "Marianne Loreno",
+      "position": "Designer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-3.jpg",
+      "alt": "woman",
+      "name": "Riga Pelore",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-4.jpg",
+      "alt": "woman",
+      "name": "Keira Knightley",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": null
+      }
+    },
+    {
+      "photo": "./images/experts/expert-5.jpg",
+      "alt": "man",
+      "name": "Scott Lawrence",
+      "position": "Designer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://www.twitter.com/"
+      }
+    },
+    {
+      "photo": "./images/experts/expert-6.jpg",
+      "alt": "woman",
+      "name": "Karen Allen",
+      "position": "Farmer",
+      "socials": {
+        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "twitter": null
+      }
+    }
+  ]
+}

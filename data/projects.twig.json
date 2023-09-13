@@ -1,0 +1,35 @@
+{
+  "title": "Projects",
+  "projects": [
+    {
+      "image": "./images/Projects/project-1.jpg",
+      "title": "Green & Tasty Lemon",
+      "tag": "Fruits"
+    },
+    {
+      "image": "./images/Projects/project-2.jpg",
+      "title": "Organic Carrot",
+      "tag": "Farmer"
+    },
+    {
+      "image": "./images/Projects/project-3.jpg",
+      "title": "Organic Betel Leaf",
+      "tag": "Leaf"
+    },
+    {
+      "image": "./images/Projects/project-4.jpg",
+      "title": "Natural Tommato",
+      "tag": "Fruits"
+    },
+    {
+      "image": "./images/Projects/project-5.jpg",
+      "title": "Black Raspberry",
+      "tag": "Farmer"
+    },
+    {
+      "image": "./images/Projects/project-6.jpg",
+      "title": "Honey Orange",
+      "tag": "Farmer"
+    }
+  ]
+}
