@@ -1,4 +1,6 @@
-# 🍊 Organick - Online Fruit and Vegetable Store 🥦
+# Organick - Online Fruit and Vegetable Store
+
+![logo](/src/images/docs/logo.png)
 
 Welcome to Organick, an online store for fresh and organic fruits and vegetables.
 
@@ -19,6 +21,8 @@ Organick is an online platform dedicated to connecting people with high-quality,
 ## Features
 - Browse a wide range of organic fruits and vegetables.
 - Responsive design for seamless access on various devices.
+
+![responsice feature demonstration](/src/images/docs/adaptive.jpg)
 
 ## Technologies Used
 - **Gulp**: Task runner for automating development workflows.
