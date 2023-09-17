@@ -1,5 +1,3 @@
-# Organick - Online Fruit and Vegetable Store
-
 ![logo](/src/images/docs/logo.png)
 
 Welcome to Organick, an online store for fresh and organic fruits and vegetables.
