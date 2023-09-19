@@ -6,9 +6,11 @@ export function insertProducts(array, from, to, list) {
 
     list.insertAdjacentHTML(
       'beforeend',
-      `<li class="product">
+      `<li class="product" id="${product.id}">
         <span class="product__tag">${product.tag}</span>
-        <img class="product__image" src="${product.image}" alt="vegetable" />
+        <img class="product__image" src="${product.image}" alt="${
+        product.title
+      }" />
         <div class="product__details">
           <h5 class="product__title">${product.title}</h5>
           <div class="product__footer">
@@ -29,6 +31,9 @@ export function insertProducts(array, from, to, list) {
               <use href="./images/icons.svg#icon-stars"></use>
             </svg>
           </div>
+        </div>
+        <div class="product__button-backdrop">
+          <button class="product__button" type="button">Add To Cart</button>
         </div>
       </li>`
     );
