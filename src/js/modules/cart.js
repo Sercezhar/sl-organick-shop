@@ -1,3 +1,5 @@
+import { toggleBtnStatus } from './toggleBtnStatus';
+
 export function cart() {
   const addToCartBtn = document.querySelectorAll('.product__button');
   const cartList = document.querySelector('.cart__list');
@@ -13,12 +15,11 @@ export function cart() {
 
   // disable "add to cart" buttons if already in cart
   addToCartBtn.forEach(button => {
-    const alreadyInCart = cartItems.some(
-      item => item.id === button.parentNode.parentNode.id
-    );
+    const productId = button.parentNode.parentNode.id;
+    const alreadyInCart = cartItems.some(item => item.id === productId);
 
     if (alreadyInCart) {
-      disableButton(button);
+      toggleBtnStatus(productId);
     }
   });
 
@@ -48,7 +49,7 @@ export function cart() {
       cartItems.push(cartProduct);
       localStorage.setItem('products', JSON.stringify(cartItems));
 
-      disableButton(event.target);
+      toggleBtnStatus(productId);
       calcCartQty();
       calcTotalPrice();
       toggleCartStatus();
@@ -65,17 +66,7 @@ export function cart() {
       localStorage.setItem('products', JSON.stringify(newCartItems));
       product.remove();
 
-      const prodInList = document.getElementById(product.id);
-      const prodInListBackdrop = prodInList.querySelector(
-        '.product__button-backdrop'
-      );
-      const prodInListBtn = prodInList.querySelector('.product__button');
-
-      prodInListBtn.disabled = false;
-      prodInListBtn.innerText = 'Add To Cart';
-      prodInListBackdrop.style.opacity = '0';
-      prodInList.style.pointerEvents = 'all';
-
+      toggleBtnStatus(product.id, false);
       calcCartQty();
       calcTotalPrice();
       toggleCartStatus();
@@ -139,13 +130,6 @@ export function cart() {
         </button>
       </li>`
     );
-  }
-
-  function disableButton(button) {
-    button.disabled = true;
-    button.innerText = 'In Cart';
-    button.parentNode.style.opacity = '1';
-    button.parentNode.parentNode.style.pointerEvents = 'none';
   }
 
   function toggleCartStatus() {
