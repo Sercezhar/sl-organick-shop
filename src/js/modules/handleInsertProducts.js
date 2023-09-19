@@ -1,8 +1,8 @@
 import { getProducts } from '../services/getProducts';
 import { insertProducts } from './insertProducts';
 
-export function handleInsertProducts(from, to, list) {
-  getProducts().then(products => {
+export async function handleInsertProducts(from, to, list) {
+  await getProducts().then(products => {
     insertProducts(products, from, to, list);
   });
 }
