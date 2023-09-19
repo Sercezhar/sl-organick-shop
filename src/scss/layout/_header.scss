@@ -67,6 +67,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  z-index: 11;
 
   @media (max-width: $laptop) {
     position: fixed;
@@ -118,6 +119,7 @@
     pointer-events: none;
     transition: opacity 300ms $transitionBase;
     transition-delay: 200ms;
+    z-index: 10;
 
     @media (max-width: $laptop) {
       inset: 0;

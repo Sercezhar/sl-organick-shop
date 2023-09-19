@@ -16,11 +16,14 @@
   background-color: var(--color-light-gray);
   border-radius: 30px;
   transition: box-shadow 250ms $transitionBase;
-  cursor: pointer;
   overflow: hidden;
 
   &:hover {
     box-shadow: $shadowHoverBtn;
+
+    & .product__button-backdrop {
+      opacity: 1 !important;
+    }
   }
 
   &__tag {
@@ -79,5 +82,26 @@
   &__discount {
     @extend .product__price;
     margin-left: 8px;
+  }
+
+  &__button-backdrop {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 300ms $transitionBase;
+  }
+
+  &__button {
+    @extend .button-common;
+    @extend .button-common--yellow;
+
+    &:disabled {
+      color: #fff;
+      background-color: var(--color-primary);
+    }
   }
 }
