@@ -1,3 +1,4 @@
+import { cart } from './modules/cart';
 import { counterOnScroll } from './modules/counter';
 import { handleInsertProducts } from './modules/handleInsertProducts';
 import { insertProducts } from './modules/insertProducts';
@@ -34,5 +35,6 @@ function loadMoreProducts() {
   });
 }
 
-handleInsertProducts(0, 8, productsList);
-handleInsertProducts(12, 16, offersList);
+await handleInsertProducts(0, 8, productsList);
+await handleInsertProducts(12, 16, offersList);
+cart();
