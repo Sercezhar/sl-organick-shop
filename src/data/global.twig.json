@@ -19,7 +19,7 @@
     {
       "id": "3",
       "image": "./images/products/product-3.jpg",
-      "title": "White Nuts",
+      "title": "Pistachio",
       "price": 22,
       "discount": 10,
       "tag": "Millets"
@@ -67,7 +67,7 @@
     {
       "id": "9",
       "image": "./images/products/product-9.jpg",
-      "title": "Mung Bean",
+      "title": "Zucchini Coucourzelle",
       "price": 12,
       "discount": null,
       "tag": "Health"
@@ -99,7 +99,7 @@
     {
       "id": "13",
       "image": "./images/products/product-13.jpg",
-      "title": "Mung Bean",
+      "title": "Broccoli",
       "price": 12,
       "discount": null,
       "tag": "Vegetable"
